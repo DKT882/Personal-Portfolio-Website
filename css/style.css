@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+    user-select: none;
+}
+
+:root {
+    --themeBlue: #222831;
+    --themeGreen: #00ADB5;
+    --color: #e1e1e1;
+    --themeGray: #393E46;
+    --textWite: #ffffff95;
+}
+
+
+
+body {
+    transition: 2s ease-in-out;
+    background-color: var(--themeBlue);
+}
+
+nav {
+    background-color: var(--themeBlue);
+    color: var(--color);
+    height: 123px;
+    border-bottom: 1px solid #eeeeee3e;
+}
+
+ul li {
+    list-style: none;
+    margin-right: 48px;
+    font-size: 18px;
+}
+
+.leftNavBar {
+    width: 512px;
+}
+
+.leftNavBarInner {
+    width: 301px;
+}
+
+.rightNavBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0px;
+}
+
+.rightNavBarInner {
+    justify-content: center;
+    align-items: center;
+    width: 502px;
+}
+
+main .creativeUiDesigner p {
+    font-size: 96px;
+    font-weight: bold;
+    color: var(--color);
+    column-gap: -10px;
+}
+
+main .creativeUiDesigner span {
+    margin-top: -70px;
+    color: var(--themeGreen);
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+.hireMeButton,
+.downloadCV_Button {
+    background-color: var(--themeGreen);
+    padding: 15px;
+    border-radius: 100px;
+    height: 47px;
+    border: none;
+    outline: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--color);
+    margin: 20px;
+    cursor: pointer;
+}
+
+.hireMeButton {
+    width: 136px;
+}
+
+.downloadCV_Button {
+    width: 223px;
+    background-color: var(--themeGray);
+}
+
+.downloadCV_Button img {
+    margin-left: 10px;
+}
+
+.curlyArrow {
+    position: relative;
+    top: 20px;
+}
+
+.firstSecitonRightImage {
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+.doodleSVG {
+    z-index: 1;
+}
+
+.girlSVG {
+    top: 185px;
+    left: -25px;
+    z-index: 2;
+
+}
+
+.rightImage {
+    width: 520px;
+    height: 512px;
+    position: relative;
+}
+
+.innerMargin {
+    margin: auto;
+    width: 1300px;
+    justify-content: space-between;
+}
+
+.firstView {
+    margin-bottom: 100px;
+}
+
+.secondPageScroll {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondPageScroll img {
+    animation: upToDown 2s ease-in-out infinite;
+    position: relative;
+}
+
+.scrollPage {
+    position: relative;
+    top: 250px;
+    right: 300px;
+    background-color: var(--themeGray);
+    border-radius: 25px;
+}
+
+@keyframes upToDown {
+    0% {
+        top: -10px;
+    }
+
+    50% {
+        top: 10px;
+    }
+
+    100% {
+        top: -10px;
+    }
+}
+
+/* second page content */
+
+.aboutMeTitle {
+    font-size: 64px;
+    color: var(--color);
+}
+
+.aboutMeTitle span {
+    color: var(--themeGreen);
+}
+
+.aboutMe {
+    margin-top: 100px;
+}
+
+.aboutMe p {
+    width: 389px;
+    height: 180;
+    color: var(--textWite);
+}
+
+.aboutMe p span {
+    color: var(--color);
+}
+
+
+.secondSecitonRightImage {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+}
+
+.rightImage .secondRightImage .girlSVG img {
+    top: 180px;
+}
+
+#second {
+    height: 850px;
+}
+
+/* Third section content */
+
+
+.thirdMainSection {
+    background-image: url(../images/doodleItemsBackground.svg);
+    /* width: 98.5vw;
+    height: 100vh; */
+    width: 1512.950px;
+    height: 873.200px;
+    height: 50em;
+    position: relative;
+    z-index: 1;
+}
+
+.myRecentWorks {
+    font-size: 64px;
+    font-weight: bolder;
+}
+
+.myRecentWorks p {
+    color: var(--color);
+}
+
+.myRecentWorks span {
+    color: var(--themeGreen);
+}
+
+.thirdPageButtons {
+    column-gap: 20px;
+}
+
+.all a,
+.UI a,
+.UX a,
+.webDesign a {
+    text-decoration: none;
+}
+
+.all a div,
+.UI a div,
+.UX a div,
+.webDesign a div {
+    border-radius: 40px;
+    padding: 10px 25px;
+    background-color: var(--themeGray);
+    color: var(--color);
+    font-weight: bolder;
+}
+
+.all a div {
+    background-color: var(--themeGreen);
+    color: var(--color);
+}
+
+.card img {
+    width: 260px;
+    height: 158px;
+}
+
+.carInner {
+    padding: 68px;
+    background-color: #393e469a;
+    border-radius: 20px;
+    transition: 0.37s;
+    overflow: hidden;
+}
+
+.thirdPageCards {
+    column-gap: 48px;
+    margin-top: 48px;
+}
+
+.card {
+    transition: 0.37s;
+}
+
+.card:hover {
+    border-radius: 20px;
+    transform: scale(2);
+    animation: cardZoomEffect 1s ease-in-out ;
+}
+
+@keyframes cardZoomEffect {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(25) rotate(180deg);
+    }
+
+    100% {
+        transform: scale(2);
+    }
+}
+
+
+/* Fourth seciton Content */
+
+
+.fourthImages .curlArrow {
+    transform: rotate(150deg);
+}
+
+.fourthImages {
+    column-gap: 70px;
+}
+
+.gotA_ProjectInMind {
+    color: var(--color);
+    font-weight: bolder;
+    font-size: 64px;
+}
+
+.gotA_ProjectInMind div {
+    color: var(--themeGreen);
+}
+.nameEmail{
+    column-gap: 24px;
+}
+.fourthRightPart {
+    column-gap: 20px;
+    color: var(--color);
+    font-weight: bolder;
+    font-size: 18px;
+    width: 1300px;
+}
+.fourthRightPart input{
+    padding-left:25px ;
+    border-radius: 10px;
+    outline: none;
+    color: var(--textWite);
+    border: none;
+    background-color:var(--themeGray);
+    width: 288px;
+    height: 60px;
+    
+}
+
+.fourthRightPart ::placeholder {
+    font-weight: bolder;
+    font-size: 18px;
+    opacity: 1;
+}
+.message textarea{
+    width: 625px;
+    height: 280px;
+    padding-left:25px ;
+    padding-top:25px ;
+    border-radius: 10px;
+    background-color: var(--themeGray);
+    color: var(--textWite);
+    border: none;
+}
+
+.fourthTop{
+    margin: 136px 0;
+}
+.fourthPageButton{
+    margin-top: 24px;
+}
+.fourthPageButton button{
+    background-color: var(--themeGreen);
+    border-radius: 50px;
+    padding: 10px;
+    color: var(--color);
+    text-shadow: 1px 5px 5px var(--themeGray);
+    font-weight: bold;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    transition: 0.37s;
+}
+.fourthPageButton:hover .fourthPageButton button{
+    transform: scale(1.5);
+}
+
+.last{
+    height: 400px;
+}
+
+
+.lastIcons a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 24px;
+    text-decoration: none;
+    color: var(--color);
+}
+
+.socialMedia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 24px;
+}
